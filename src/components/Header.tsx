@@ -104,7 +104,7 @@ const HeaderTitle = styled.div`
   }
 `;
 
-const HeaderNav = styled.nav`
+export const HeaderNav = styled.nav`
   display: flex;
   align-items: center;
   gap: 1rem;
@@ -138,7 +138,7 @@ const NavItem = styled.a`
   }
 `;
 
-const MobileMenuToggle = styled.div`
+export const MobileMenuToggle = styled.div`
   display: none;
   position: relative;
   cursor: pointer;
