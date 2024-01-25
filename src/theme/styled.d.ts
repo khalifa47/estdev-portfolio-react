@@ -1,0 +1,15 @@
+import "styled-components";
+
+declare module "styled-components" {
+  export interface DefaultTheme {
+    borderRadius: string;
+
+    colors: {
+      main: string;
+      secondary: string;
+      headerBackground: string;
+      background: string;
+      secondaryBackground: string;
+    };
+  }
+}
