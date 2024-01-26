@@ -1,9 +1,9 @@
 import styled from "styled-components";
 
-const SectionWrapper = styled.section<{ about?: boolean }>`
+const SectionWrapper = styled.section<{ $about?: boolean }>`
   display: flex;
-  justify-content: ${({ about }) => (about ? "space-between" : "center")};
-  flex-direction: ${({ about }) => (about ? "row" : "column")};
+  justify-content: ${(props) => (props.$about ? "space-between" : "center")};
+  flex-direction: ${(props) => (props.$about ? "row" : "column")};
   align-items: center;
   padding: 4rem;
 
@@ -14,9 +14,9 @@ const SectionWrapper = styled.section<{ about?: boolean }>`
     padding-bottom: 2.5rem;
   }
 
-  ${({ about }) =>
-    about &&
-    `
+  ${(props) =>
+    props.$about
+      ? `
     flex-wrap: nowrap;
     gap: 1.25rem;
     
@@ -24,7 +24,20 @@ const SectionWrapper = styled.section<{ about?: boolean }>`
       flex-wrap: wrap;
       justify-content: center;
     }
-  `}
+  `
+      : `
+    h1 {
+      font-size: 3.5rem;
+      font-weight: 800;
+      margin-bottom: 1rem;
+    }
+
+    h2 {
+      font-size: 1.2rem;
+      font-weight: 300;
+      margin-bottom: 0.5rem;
+    }
+`}
 `;
 
 export default SectionWrapper;
