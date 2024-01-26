@@ -2,6 +2,7 @@ import styled, { ThemeProvider } from "styled-components";
 import { theme } from "./theme";
 import Header from "./components/Header";
 import About from "./components/About";
+import Experience from "./components/Experience";
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <Header />
       <MainContainer>
         <About />
+        <Experience />
       </MainContainer>
     </ThemeProvider>
   );
