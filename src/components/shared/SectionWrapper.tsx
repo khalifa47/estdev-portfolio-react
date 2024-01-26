@@ -7,6 +7,13 @@ const SectionWrapper = styled.section<{ about?: boolean }>`
   align-items: center;
   padding: 4rem;
 
+  @media screen and (max-width: 640px) {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+
   ${({ about }) =>
     about &&
     `
@@ -14,7 +21,7 @@ const SectionWrapper = styled.section<{ about?: boolean }>`
     gap: 1.25rem;
     
     @media screen and (max-width: 768px) {
-      flex-wrap: wrap-reverse;
+      flex-wrap: wrap;
       justify-content: center;
     }
   `}
