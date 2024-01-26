@@ -1,5 +1,6 @@
 import styled, { keyframes } from "styled-components";
 import SectionWrapper from "./shared/SectionWrapper";
+import { profile } from "../assets";
 
 const About = () => {
   return (
@@ -24,7 +25,7 @@ const About = () => {
         <p>Let's work together to bring your ideas to life!</p>
       </BioText>
       <BioImage>
-        <ProfileImage src="me.png" alt="Profile" />
+        <ProfileImage src={profile} alt="Profile" />
       </BioImage>
     </SectionWrapper>
   );
