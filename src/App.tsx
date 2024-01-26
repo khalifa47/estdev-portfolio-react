@@ -1,12 +1,15 @@
 import styled, { ThemeProvider } from "styled-components";
 import { theme } from "./theme";
 import Header from "./components/Header";
+import About from "./components/About";
 
 function App() {
   return (
     <ThemeProvider theme={theme}>
       <Header />
-      <MainContainer></MainContainer>
+      <MainContainer>
+        <About />
+      </MainContainer>
     </ThemeProvider>
   );
 }
