@@ -40,19 +40,14 @@ const ExperienceCard = ({
 
 const Experience = () => {
   return (
-    <SectionWrapper>
+    <SectionWrapper id="experience">
       <h2>WHAT I HAVE DONE SO FAR</h2>
       <h1>Experience.</h1>
-      <TimelineContainer>
-        <VerticalTimeline lineColor="#e8e8e8">
-          {experiences.map((experience, index) => (
-            <ExperienceCard
-              key={`experience-${index}`}
-              experience={experience}
-            />
-          ))}
-        </VerticalTimeline>
-      </TimelineContainer>
+      <VerticalTimeline lineColor="#e8e8e8">
+        {experiences.map((experience, index) => (
+          <ExperienceCard key={`experience-${index}`} experience={experience} />
+        ))}
+      </VerticalTimeline>
     </SectionWrapper>
   );
 };
@@ -98,10 +93,4 @@ const ExperiencePoints = styled.ul`
     padding-left: 0.25rem;
     font-size: 0.875rem;
   }
-`;
-
-const TimelineContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  margin-top: 2rem;
 `;

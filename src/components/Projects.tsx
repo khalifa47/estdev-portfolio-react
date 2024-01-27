@@ -3,11 +3,10 @@ import GridWrap from "./shared/GridWrap";
 import SectionWrapper from "./shared/SectionWrapper";
 import { projects } from "../constants";
 import { github, readme } from "../assets";
-import React from "react";
 
 const Projects = () => {
   return (
-    <SectionWrapper>
+    <SectionWrapper id="projects">
       <h2>MY WORK</h2>
       <h1>Projects🛠️.</h1>
       <p>
@@ -132,7 +131,7 @@ const ProjectLinks = styled.div`
   }
 `;
 
-const ProjectDescription = styled(React.Fragment)`
+const ProjectDescription = styled.div`
   p {
     font-size: 0.8rem;
     font-weight: 300;

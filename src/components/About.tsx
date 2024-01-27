@@ -4,7 +4,7 @@ import { profile } from "../assets";
 
 const About = () => {
   return (
-    <SectionWrapper $about>
+    <SectionWrapper $about id="about">
       <BioText>
         <h2>Hello World👋</h2>
         <h1>
