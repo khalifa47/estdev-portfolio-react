@@ -1,6 +1,5 @@
 // tech
 import azure from "./tech/azure.svg";
-import compose from "./tech/compose.png";
 import figma from "./tech/figma.png";
 import firebase from "./tech/firebase.svg";
 import git from "./tech/git.png";
@@ -33,7 +32,6 @@ import readme from "./misc/readme.png";
 
 export {
   azure,
-  compose,
   figma,
   firebase,
   git,

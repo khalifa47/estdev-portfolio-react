@@ -1,4 +1,20 @@
-import { kplc, strath } from "../assets";
+import {
+  kplc,
+  strath,
+  javascript,
+  typescript,
+  reactjs,
+  nextjs,
+  mui,
+  tailwind,
+  prisma,
+  azure,
+  firebase,
+  python,
+  git,
+  figma,
+  supabase,
+} from "../assets";
 
 export const experiences = [
   {
@@ -26,5 +42,60 @@ export const experiences = [
       "Collaborated with teams including designers and other developers to create high-quality products.",
       "Achieved various awards and including Dean's list 2020, 2021, and 2022.",
     ],
+  },
+];
+
+export const technologies = [
+  {
+    name: "JavaScript",
+    icon: javascript,
+  },
+  {
+    name: "TypeScript",
+    icon: typescript,
+  },
+  {
+    name: "React.js",
+    icon: reactjs,
+  },
+  {
+    name: "Next.js",
+    icon: nextjs,
+  },
+  {
+    name: "Material UI",
+    icon: mui,
+  },
+  {
+    name: "Tailwind CSS",
+    icon: tailwind,
+  },
+  {
+    name: "Prisma",
+    icon: prisma,
+  },
+  {
+    name: "Azure",
+    icon: azure,
+  },
+  {
+    name: "Supabase",
+    icon: supabase,
+  },
+  {
+    name: "Firebase",
+    icon: firebase,
+  },
+  {
+    name: "Python",
+    icon: python,
+  },
+  {
+    name: "Git",
+    icon: git,
+  },
+  {
+    name: "Figma",
+    icon: figma,
   },
 ];

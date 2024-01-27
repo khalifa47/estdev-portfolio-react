@@ -3,6 +3,7 @@ import { theme } from "./theme";
 import Header from "./components/Header";
 import About from "./components/About";
 import Experience from "./components/Experience";
+import Tech from "./components/Tech";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <MainContainer>
         <About />
         <Experience />
+        <Tech />
       </MainContainer>
     </ThemeProvider>
   );
