@@ -1,27 +1,36 @@
 import { useState } from "react";
 import styled, { keyframes } from "styled-components";
+import { navLinks } from "../constants";
+
+const onClickScroll = (
+  e: React.MouseEvent<HTMLAnchorElement, MouseEvent>,
+  id: string
+) => {
+  e.preventDefault();
+
+  const element = document.getElementById(id);
+  if (element) {
+    element.scrollIntoView({ behavior: "smooth" });
+  }
+};
 
 const NavItems = () => {
   return (
     <>
-      <NavItem href="#about">About</NavItem>
-      <NavItem href="#experience">Experience</NavItem>
-      <NavItem href="#projects">Projects</NavItem>
-      <NavItem href="https://github.com/khalifa47" target="_blank">
-        GitHub
-      </NavItem>
-      <NavItem
-        href="https://www.linkedin.com/in/khalifa-fumo-4199781ba/"
-        target="_blank"
-      >
-        LinkedIn
-      </NavItem>
-      <NavItem
-        href="https://drive.google.com/file/d/1Y9euqs9OMPXQOk3VXwiX5BjGwVOvhhrU/view?usp=sharing"
-        target="_blank"
-      >
-        Resume
-      </NavItem>
+      {navLinks.map(({ link, title }, index) => (
+        <NavItem
+          key={`nav-link-${index}`}
+          href={link}
+          target={link.startsWith("https") ? "_blank" : "_self"}
+          onClick={
+            !link.startsWith("https")
+              ? (e) => onClickScroll(e, title.toLowerCase())
+              : undefined
+          }
+        >
+          {title}
+        </NavItem>
+      ))}
     </>
   );
 };
