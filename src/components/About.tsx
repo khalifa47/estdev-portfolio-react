@@ -85,7 +85,7 @@ const bobbing = keyframes`
 const ProfileImage = styled.img`
   width: 100%;
   height: 100%;
-  border-radius: 4px;
+  border-radius: ${({ theme }) => theme.borderRadius};
   border-bottom-left-radius: 50%;
   animation: ${bobbing} 3s ease-in-out infinite;
 `;

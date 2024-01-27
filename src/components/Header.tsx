@@ -67,7 +67,7 @@ export default Header;
 const Navbar = styled.header`
   color: #fff;
   padding: 1.2rem;
-  background-color: ${(props) => props.theme.colors.headerBackground};
+  background-color: ${({ theme }) => theme.colors.headerBackground};
   position: sticky;
 `;
 
@@ -100,7 +100,7 @@ const HeaderTitle = styled.div`
   }
 
   span {
-    color: ${(props) => props.theme.colors.secondary};
+    color: ${({ theme }) => theme.colors.secondary};
   }
 `;
 
@@ -122,7 +122,7 @@ const NavItem = styled.a`
   &:after {
     content: "";
     height: 2px;
-    background-color: ${(props) => props.theme.colors.main};
+    background-color: ${({ theme }) => theme.colors.main};
     position: absolute;
     width: 100%;
     bottom: 0;
@@ -163,10 +163,10 @@ const MobileMenu = styled.div`
   top: 65px;
   left: 20px;
   padding: 0.75rem;
-  border-radius: 4px;
+  border-radius: ${({ theme }) => theme.borderRadius};
   width: fit-content;
   height: fit-content;
-  background-color: ${(props) => props.theme.colors.headerBackground};
+  background-color: ${({ theme }) => theme.colors.headerBackground};
   z-index: 10;
   flex-direction: column;
   gap: 0.75rem;
