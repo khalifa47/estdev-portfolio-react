@@ -14,6 +14,12 @@ import {
   git,
   figma,
   supabase,
+  kplcClearance,
+  disney,
+  rems,
+  ploxy,
+  ntsa,
+  karo,
 } from "../assets";
 
 export const experiences = [
@@ -97,5 +103,69 @@ export const technologies = [
   {
     name: "Figma",
     icon: figma,
+  },
+];
+
+export const projects = [
+  {
+    name: "KPLC Clearance",
+    description:
+      "An employee clearance system designed to facilitate the clearance process for exiting members of staff at Kenya Power.",
+    tags: ["Next13", "MaterialUI", "MySQL", "Prisma"],
+    image: kplcClearance,
+    link: "https://kplc-clearance.vercel.app/",
+    creds:
+      "https://drive.google.com/file/d/1T6fJ1-lsvgm8xV3nE2mdsVDXDANOd90D/view?usp=share_link",
+    source_code_link: null,
+  },
+  {
+    name: "Disney Plus Clone",
+    description:
+      "A Disney Plus clone (not exact) that displays the latest movie updates and trailers, powered by the TMDb and YouTube APIs.",
+    tags: ["React", "Redux", "styled-components", "Firebase"],
+    image: disney,
+    link: "https://disney-clone-plus-ae2ae.web.app",
+    creds: null,
+    source_code_link: "https://github.com/khalifa47/disney-plus-clone",
+  },
+  {
+    name: "REMS",
+    description:
+      "A real estate management system. From searching for properties to management of properties, this web application has it all!",
+    tags: ["Laravel", "ReactMUI", "MySQL", "MPesaAPI"],
+    image: rems,
+    link: null,
+    creds: null,
+    source_code_link: null,
+  },
+  {
+    name: "Ploxy News",
+    description:
+      "A news application that displays the latest news updates at a glance with different categories.",
+    tags: ["ReactMUI", "Redux", "NewsAPI", "Firebase"],
+    image: ploxy,
+    link: null, // "https://ploxy-ccf01.web.app"
+    creds: null,
+    source_code_link: "https://github.com/khalifa47/ploxy",
+  },
+  {
+    name: "NTSA Drivers",
+    description:
+      "An application dealing with the driver's licence management. Dummy data is used to mock the government registry.",
+    tags: ["ReactMUI", "Redux", "MpesaAPI", "Firebase"],
+    image: ntsa,
+    link: "https://ntsadrivers.web.app/",
+    creds:
+      "https://github.com/khalifa47/ntsa-drivers/blob/master/src/records.json",
+    source_code_link: "https://github.com/khalifa47/ntsa-drivers",
+  },
+  {
+    name: "Karo",
+    description: "An Android application dealing with school fees management.",
+    tags: ["Android", "Kotlin", "Compose", "Firebase"],
+    image: karo,
+    link: null,
+    creds: null,
+    source_code_link: "https://github.com/khalifa47/karo",
   },
 ];
