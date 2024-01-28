@@ -30,12 +30,20 @@ const SectionWrapper = styled.section<{ $about?: boolean }>`
       font-size: 3.5rem;
       font-weight: 800;
       margin-bottom: 1rem;
+      text-align: center;
     }
 
     h2 {
       font-size: 1.2rem;
       font-weight: 300;
       margin-bottom: 0.5rem;
+      text-align: center;
+    }
+
+    @media screen and (max-width: 768px) {
+      h1 {
+        font-size: 2.5rem;
+      }
     }
 `}
 `;
