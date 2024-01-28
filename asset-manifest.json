@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/estdev-portfolio-react/static/css/main.062e6b3a.css",
-    "main.js": "/estdev-portfolio-react/static/js/main.ad74c8cd.js",
+    "main.js": "/estdev-portfolio-react/static/js/main.f3653911.js",
     "static/media/me.png": "/estdev-portfolio-react/static/media/me.45a730434abb39004fa0.png",
     "static/media/karo.png": "/estdev-portfolio-react/static/media/karo.b31a369ad940dd89f33b.png",
     "static/media/kplc-clearance.png": "/estdev-portfolio-react/static/media/kplc-clearance.dc83d5ab4e801fe14884.png",
@@ -21,10 +21,10 @@
     "static/media/material-ui.svg": "/estdev-portfolio-react/static/media/material-ui.b45776fb29e80a04fe8a1f4e944e7ae8.svg",
     "static/media/prisma.svg": "/estdev-portfolio-react/static/media/prisma.df51077eff64b918f0fa2d470e39407e.svg",
     "main.062e6b3a.css.map": "/estdev-portfolio-react/static/css/main.062e6b3a.css.map",
-    "main.ad74c8cd.js.map": "/estdev-portfolio-react/static/js/main.ad74c8cd.js.map"
+    "main.f3653911.js.map": "/estdev-portfolio-react/static/js/main.f3653911.js.map"
   },
   "entrypoints": [
     "static/css/main.062e6b3a.css",
-    "static/js/main.ad74c8cd.js"
+    "static/js/main.f3653911.js"
   ]
 }
