@@ -5,6 +5,7 @@ import About from "./components/About";
 import Experience from "./components/Experience";
 import Tech from "./components/Tech";
 import Projects from "./components/Projects";
+import Jokes from "./components/Jokes";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Experience />
         <Tech />
         <Projects />
+        <Jokes />
       </MainContainer>
     </ThemeProvider>
   );
