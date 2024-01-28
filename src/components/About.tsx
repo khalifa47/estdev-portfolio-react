@@ -1,6 +1,7 @@
 import styled, { keyframes } from "styled-components";
 import SectionWrapper from "./shared/SectionWrapper";
 import { profile } from "../assets";
+import { ReactTyped } from "react-typed";
 
 const About = () => {
   return (
@@ -12,11 +13,26 @@ const About = () => {
         </h1>
         <p>
           I'm a skilled software engineer with experience in TypeScript and
-          JavaScript, and expertise in React, Next.js 13, Supabase, Firebase,
-          and React Native for mobile apps. I have been developing applications
-          for 3 years. I'm a quick learner and collaborate closely with clients
-          to create efficient, scalable, and user-friendly solutions that solve
-          real-world problems.
+          JavaScript, and expertise in{" "}
+          <ReactTyped
+            strings={[
+              "React",
+              "Next.js 13",
+              "Supabase",
+              "Firebase",
+              "React Native",
+            ]}
+            typeSpeed={80}
+            backSpeed={70}
+            backDelay={1000}
+            loop
+          />
+          .
+        </p>
+        <p>
+          I have been developing applications for 3 years. I'm a quick learner
+          and collaborate closely with clients to create efficient, scalable,
+          and user-friendly solutions that solve real-world problems.
         </p>
         <p>
           When I'm not working on projects, I like to play chess, read on tech
