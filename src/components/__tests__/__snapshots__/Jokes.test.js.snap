@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Jokes component renders without crashing 1`] = `
+<section
+  className="sc-beySPh dWyJJG"
+>
+  <h2>
+    Get ready to laugh.
+  </h2>
+  <h1>
+    JOKE POKE
+  </h1>
+  <div
+    className="sc-guDLey eFiOpX"
+  >
+    <button
+      className="sc-eDLKkx dqKqkC"
+      onClick={[Function]}
+    >
+      &lt;
+    </button>
+    <div
+      className="sc-dmyCSP iVGOcU"
+    />
+    <button
+      className="sc-eDLKkx dqKqkC"
+      onClick={[Function]}
+    >
+      &gt;
+    </button>
+  </div>
+  <ul
+    className="sc-jTQCzO isXGCh"
+  />
+  <button
+    className="sc-iBdnpw jSimPo"
+    disabled={false}
+    onClick={[Function]}
+  >
+    Can't stop Laughing?😂See more jokes
+  </button>
+</section>
+`;
