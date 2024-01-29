@@ -13,6 +13,7 @@
     "@types/react-dom": "^18.2.18",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-helmet": "^6.1.0",
     "react-scripts": "5.0.1",
     "react-test-renderer": "^18.2.0",
     "react-typed": "^2.0.12",
@@ -48,6 +49,7 @@
     ]
   },
   "devDependencies": {
+    "@types/react-helmet": "^6.1.11",
     "@types/react-vertical-timeline-component": "^3.3.6",
     "gh-pages": "^6.1.1",
     "jest-styled-components": "^7.2.0"
