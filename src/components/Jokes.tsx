@@ -41,7 +41,7 @@ const Jokes = () => {
   const regenerateJokes = async () => {
     setLoading(true);
     const response = await fetch(
-      `https://v2.jokeapi.dev/joke/${selectedCategory}?blacklistFlags=nsfw,religious,political,racist,sexist,explicit&amount=3`
+      `https://v2.jokeapi.dev/joke/${selectedCategory}?amount=3&safe-mode`
     );
     const data = await response.json();
     setJokes(data.jokes);
@@ -52,7 +52,7 @@ const Jokes = () => {
     const fetchCategories = async () => {
       const response = await fetch("https://v2.jokeapi.dev/categories");
       const data = await response.json();
-      setCategories(data.categories);
+      setCategories(data.categories.filter((cat: string) => cat !== "Dark"));
     };
     fetchCategories();
   }, []);
@@ -60,7 +60,7 @@ const Jokes = () => {
   useEffect(() => {
     const fetchJokes = async () => {
       const response = await fetch(
-        `https://v2.jokeapi.dev/joke/${selectedCategory}?blacklistFlags=nsfw,religious,political,racist,sexist,explicit&amount=3`
+        `https://v2.jokeapi.dev/joke/${selectedCategory}?amount=3&safe-mode`
       );
       const data = await response.json();
       setJokes(data.jokes);
